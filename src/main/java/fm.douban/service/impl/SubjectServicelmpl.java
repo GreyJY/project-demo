@@ -20,7 +20,7 @@ public class SubjectServiceImpl implements SubjectService {
         subject.setId("s001");
         subjectMap.put(subject.getId(), subject);
     }
-
+//创建一个临时数据库
     @Override
     public Subject get(String subjectId) {
         Subject subject = subjectMap.get(subjectId);
@@ -28,11 +28,9 @@ public class SubjectServiceImpl implements SubjectService {
         List<Song> songs = songService.list(subjectId);
         subject.setSongs(songs);
         return subject;
-    }
+    }//跟前面很像的专辑业务流程
 
     public void setSongService(SongService songService) {
         this.songService = songService;
     }
-
-}
 
