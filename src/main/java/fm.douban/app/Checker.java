@@ -1,4 +1,4 @@
-
+//整个checker程序是为了测试启动是否成功，6s内没有报错就说明启动正常，这个相当于自己又开了一个线程然后控制项目生命周期
 //main（）-->springapplication.run()-->扫描@Service-->创建Checker对象-->执行afterRropertiesSet()-->创建Thread对象-->
 //thread.start()-->开启新线程-->等待6s-->system.exit(0)-->程序关闭
 package fm.douban.app;
